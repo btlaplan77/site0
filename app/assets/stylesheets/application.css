@@ -12,21 +12,3 @@
  *= require bootstrap_and_overrides
  *= require_tree .
  */
-
-body {
-}
-
-.top {
-	margin-top: 2%;
-	border-radius: 8px;
-	background: gray;
-	text-align: center;
-	height:20em;
-}
-
-.mid {
-	border-radius: 8px;
-	background: red;
-	text-align: center;
-	height:30em;
-}

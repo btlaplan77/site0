@@ -1,3 +1,52 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@mixin remove_gradient($color:transparent) {
+    background-color:$color;
+    background-image: none;
+    background-repeat: no-repeat;
+    filter: none;
+}
+
+
+.about {
+	margin-top: 10%;
+	border-radius: 4px;
+	background-color: white;
+	text-align: center;
+	height: 20em;
+}
+
+.work {
+	border-radius: 4px;
+	background: white;
+	text-align: center;
+	height: 30em;
+}
+
+.contact {
+	border-radius: 4px;
+	background: white;
+	text-align: center;
+	height: 14em;
+}
+
+.navbar {
+	@include remove_gradient(#f5f5f5);	
+}
+
+.navbar-inner {
+	padding:.2em;
+	@include remove_gradient(white);
+	border-radius:1px;
+	height:2em;
+	font-size: 3em;
+	width: 80%;
+	margin-left:10%;
+	border:none;
+}
+
+body {
+	background-color: #f5f5f5;
+}
